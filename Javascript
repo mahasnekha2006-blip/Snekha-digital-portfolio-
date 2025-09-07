@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Resume</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; background: #f5f5f5; }
+    .resume { border: 2px solid black; padding: 20px; width: 350px; background: white; }
+    h2 { color: darkblue; }
+    p { font-size: 16px; color: #333; }
+  </style>
+</head>
+<body>
+
+  <div class="resume" id="myResume">
+    <!-- Resume details will show here -->
+  </div>
+
+  <script>
+    // Your details
+    let myName = "R.Snekha";
+    let myEmail = "mahasnekha.2006@gmail.com";
+
+    // Display Resume content
+    document.getElementById("myResume").innerHTML = `
+      <h2>${myName}</h2>
+      <p><b>Email:</b> ${myEmail}</p>
+      <h3>Objective</h3>
+      <p>I am passionate about learning web development and creating useful projects.</p>
+      <h3>Skills</h3>
+      <p>- HTML, CSS, JavaScript<br>- Problem Solving<br>- Creativity</p>
+      <h3>Education</h3>
+      <p>Currently pursuing studies.</p>
+    `;
+  </script>
+
+</body>
+</html>
